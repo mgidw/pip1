@@ -2,15 +2,15 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.x'  // Name of the Maven installation configured in Jenkins
-        jdk 'JDK 1.8'      // Name of the JDK installation configured in Jenkins
+        maven 'Maven'  // Name of the Maven installation configured in Jenkins
+        jdk 'JDK 21'      // Name of the JDK installation configured in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
                 // Clone the repository
-                git branch: 'main', url: 'https://github.com/your-repo-url.git'
+                git branch: 'main', url: 'https://github.com/mgidw/pip1.git'
             }
         }
 
